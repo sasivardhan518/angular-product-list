@@ -1,0 +1,7 @@
+<div>
+    <input type='text'>
+<h2 *ngIf = "productsList && productsList.length > 0">Product List</h2>
+<ul *ngFor="let product of productsList" >
+<li>{{product.productId}} <button> {{product.productName}}</button> <input type='text' [(ngModel)]="product.productPrice"/><a>{{product.productPrice}}</a></li>
+</ul>
+</div>
